@@ -1,0 +1,7 @@
+{
+	"DEFAULT" :
+	{
+		"VALUE_ONE" : "foo",
+		"SECOND_VALUE" : "bar"
+	}
+}
