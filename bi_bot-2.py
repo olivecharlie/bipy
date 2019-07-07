@@ -5,8 +5,8 @@ import datetime
 import time
 
 def ping_time(client):
-	timestamp = client.ping_time()
-	#print(timestamp)
+	timestamp = client.ping_time
+    #print(timestamp)
 	td = datetime.datetime.fromtimestamp(int(timestamp['serverTime'])/1000)
 	print('Connected... server time is:', td)
 

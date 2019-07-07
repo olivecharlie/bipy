@@ -3,6 +3,7 @@ from unittest import mock
 from utility import ConfigManager
 import trader
 
+
 class TraderTests(unittest.TestCase):
 	
 	def test_connect(self):

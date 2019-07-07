@@ -7,19 +7,21 @@ with open('_config.json', 'r') as f:
 secret = config['DEFAULT']['SECRET_KEY']
 key = config['DEFAULT']['API_KEY']
 
-symbol = 'TRXBTC'
+symbol = 'BTCUSDT'
 
 client = bp.BiPy(key, secret)
 
 resp_obj = client.get_all_orders(symbol=symbol)
-#print(resp_obj)
+# print(resp_obj)
+
+print(resp_obj)
 
 for r in resp_obj:
 		if r['status'] == 'NEW':
 			print('ORDER:')
 			for i in r:
-				print(f'	{i} : {r[i]}')			
-				
+				print(f'	{i} : {r[i]}')
+
 '''
 watch open orders:
 	when they fill:
